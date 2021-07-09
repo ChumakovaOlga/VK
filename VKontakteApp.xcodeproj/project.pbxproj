@@ -13,6 +13,7 @@
 		CF7B5AF5269796F300B63D6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF7B5AF4269796F300B63D6B /* Assets.xcassets */; };
 		CF7B5AF8269796F300B63D6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF7B5AF6269796F300B63D6B /* LaunchScreen.storyboard */; };
 		CF7B5B052697980B00B63D6B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B5B042697980B00B63D6B /* LoginViewController.swift */; };
+		CF7B5B0926980A9900B63D6B /* FavouriteGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B5B0826980A9800B63D6B /* FavouriteGroupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CF7B5AF7269796F300B63D6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF7B5AF9269796F300B63D6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF7B5B042697980B00B63D6B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CF7B5B0826980A9800B63D6B /* FavouriteGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteGroupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		CF7B5B02269797D500B63D6B /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				CF7B5B06269809CF00B63D6B /* Group */,
 				CF7B5B03269797E800B63D6B /* Login */,
 			);
 			path = Presentation;
@@ -105,6 +108,22 @@
 				CF7B5B042697980B00B63D6B /* LoginViewController.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		CF7B5B06269809CF00B63D6B /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				CF7B5B0726980A3300B63D6B /* FavouriteGroup */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
+		CF7B5B0726980A3300B63D6B /* FavouriteGroup */ = {
+			isa = PBXGroup;
+			children = (
+				CF7B5B0826980A9800B63D6B /* FavouriteGroupViewController.swift */,
+			);
+			path = FavouriteGroup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +198,7 @@
 			files = (
 				CF7B5B052697980B00B63D6B /* LoginViewController.swift in Sources */,
 				CF7B5AEC269796EC00B63D6B /* AppDelegate.swift in Sources */,
+				CF7B5B0926980A9900B63D6B /* FavouriteGroupViewController.swift in Sources */,
 				CF7B5AEE269796EC00B63D6B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
