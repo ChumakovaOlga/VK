@@ -14,6 +14,13 @@
 		CF7B5AF8269796F300B63D6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF7B5AF6269796F300B63D6B /* LaunchScreen.storyboard */; };
 		CF7B5B052697980B00B63D6B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B5B042697980B00B63D6B /* LoginViewController.swift */; };
 		CF7B5B0926980A9900B63D6B /* FavouriteGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B5B0826980A9800B63D6B /* FavouriteGroupViewController.swift */; };
+		CF7B5B44269A29D900B63D6B /* GroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B5B43269A29D900B63D6B /* GroupModel.swift */; };
+		CF7B5B48269A345400B63D6B /* PeopleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B5B47269A345400B63D6B /* PeopleModel.swift */; };
+		CF7B5B4B269A3D6A00B63D6B /* GroupStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B5B4A269A3D6A00B63D6B /* GroupStorage.swift */; };
+		CF7B5B4D269AAB6900B63D6B /* GroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B5B4C269AAB6800B63D6B /* GroupTableViewCell.swift */; };
+		CF7B5B50269AE57400B63D6B /* AllGroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B5B4F269AE57300B63D6B /* AllGroupsViewController.swift */; };
+		CF7B5B53269B024D00B63D6B /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B5B52269B024D00B63D6B /* PeopleViewController.swift */; };
+		CF7B5B55269B15CF00B63D6B /* PeopleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B5B54269B15CF00B63D6B /* PeopleCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,13 @@
 		CF7B5AF9269796F300B63D6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF7B5B042697980B00B63D6B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CF7B5B0826980A9800B63D6B /* FavouriteGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteGroupViewController.swift; sourceTree = "<group>"; };
+		CF7B5B43269A29D900B63D6B /* GroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupModel.swift; sourceTree = "<group>"; };
+		CF7B5B47269A345400B63D6B /* PeopleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleModel.swift; sourceTree = "<group>"; };
+		CF7B5B4A269A3D6A00B63D6B /* GroupStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupStorage.swift; sourceTree = "<group>"; };
+		CF7B5B4C269AAB6800B63D6B /* GroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTableViewCell.swift; sourceTree = "<group>"; };
+		CF7B5B4F269AE57300B63D6B /* AllGroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupsViewController.swift; sourceTree = "<group>"; };
+		CF7B5B52269B024D00B63D6B /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		CF7B5B54269B15CF00B63D6B /* PeopleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,8 @@
 		CF7B5AEA269796EC00B63D6B /* VKontakteApp */ = {
 			isa = PBXGroup;
 			children = (
+				CF7B5B49269A3D2300B63D6B /* Repository */,
+				CF7B5B40269A286000B63D6B /* Models */,
 				CF7B5AFF2697972F00B63D6B /* AppDelegate */,
 				CF7B5AF1269796ED00B63D6B /* Main.storyboard */,
 				CF7B5B02269797D500B63D6B /* Presentation */,
@@ -96,6 +112,7 @@
 		CF7B5B02269797D500B63D6B /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				CF7B5B51269B018900B63D6B /* People */,
 				CF7B5B06269809CF00B63D6B /* Group */,
 				CF7B5B03269797E800B63D6B /* Login */,
 			);
@@ -113,7 +130,9 @@
 		CF7B5B06269809CF00B63D6B /* Group */ = {
 			isa = PBXGroup;
 			children = (
+				CF7B5B4E269AE51700B63D6B /* AllGroups */,
 				CF7B5B0726980A3300B63D6B /* FavouriteGroup */,
+				CF7B5B4C269AAB6800B63D6B /* GroupTableViewCell.swift */,
 			);
 			path = Group;
 			sourceTree = "<group>";
@@ -124,6 +143,40 @@
 				CF7B5B0826980A9800B63D6B /* FavouriteGroupViewController.swift */,
 			);
 			path = FavouriteGroup;
+			sourceTree = "<group>";
+		};
+		CF7B5B40269A286000B63D6B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CF7B5B43269A29D900B63D6B /* GroupModel.swift */,
+				CF7B5B47269A345400B63D6B /* PeopleModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CF7B5B49269A3D2300B63D6B /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				CF7B5B4A269A3D6A00B63D6B /* GroupStorage.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		CF7B5B4E269AE51700B63D6B /* AllGroups */ = {
+			isa = PBXGroup;
+			children = (
+				CF7B5B4F269AE57300B63D6B /* AllGroupsViewController.swift */,
+			);
+			path = AllGroups;
+			sourceTree = "<group>";
+		};
+		CF7B5B51269B018900B63D6B /* People */ = {
+			isa = PBXGroup;
+			children = (
+				CF7B5B52269B024D00B63D6B /* PeopleViewController.swift */,
+				CF7B5B54269B15CF00B63D6B /* PeopleCollectionViewCell.swift */,
+			);
+			path = People;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,9 +250,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF7B5B052697980B00B63D6B /* LoginViewController.swift in Sources */,
+				CF7B5B4B269A3D6A00B63D6B /* GroupStorage.swift in Sources */,
+				CF7B5B44269A29D900B63D6B /* GroupModel.swift in Sources */,
+				CF7B5B4D269AAB6900B63D6B /* GroupTableViewCell.swift in Sources */,
+				CF7B5B50269AE57400B63D6B /* AllGroupsViewController.swift in Sources */,
+				CF7B5B53269B024D00B63D6B /* PeopleViewController.swift in Sources */,
 				CF7B5AEC269796EC00B63D6B /* AppDelegate.swift in Sources */,
 				CF7B5B0926980A9900B63D6B /* FavouriteGroupViewController.swift in Sources */,
+				CF7B5B48269A345400B63D6B /* PeopleModel.swift in Sources */,
 				CF7B5AEE269796EC00B63D6B /* SceneDelegate.swift in Sources */,
+				CF7B5B55269B15CF00B63D6B /* PeopleCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
