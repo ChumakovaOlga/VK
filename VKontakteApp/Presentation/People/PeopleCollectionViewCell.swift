@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 final class PeopleCollectionViewCell: UICollectionViewCell {
    static let identifier = "PeopleCollectionViewCell"
     @IBOutlet private var iconImageView: UIImageView!

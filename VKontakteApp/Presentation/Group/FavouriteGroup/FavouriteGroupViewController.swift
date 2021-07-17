@@ -9,12 +9,10 @@ import UIKit
 class FavouriteGroupViewController: UIViewController {
     
     @IBOutlet private var tableView: UITableView!
-    
     var groups: [GroupModel] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         let storage = GroupStorage()
         groups = storage.groups
@@ -44,12 +42,11 @@ class FavouriteGroupViewController: UIViewController {
             groups.append(group)
            tableView.reloadData()
         }
-        
     }
 }
 
-
 extension FavouriteGroupViewController: UITableViewDelegate, UITableViewDataSource {
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         1
     }
@@ -59,7 +56,6 @@ extension FavouriteGroupViewController: UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-      
         guard
         let cell = tableView.dequeueReusableCell(withIdentifier: GroupTableViewCell.reusedIdentifier, for: indexPath) as? GroupTableViewCell
         else {
@@ -72,6 +68,7 @@ extension FavouriteGroupViewController: UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "moveToPeople", sender: indexPath)
     }
+    
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         //Если была нажата кнопка "Удалить"
         if editingStyle == .delete {
