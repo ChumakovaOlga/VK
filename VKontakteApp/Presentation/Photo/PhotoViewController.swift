@@ -9,16 +9,23 @@ import UIKit
 
 final class  PhotoViewController: UIViewController {
     
+    
+    @IBOutlet var dayPickerView: DayPicker!
     @IBOutlet var collectionView: UICollectionView!
     
     var photos:[PhotoModel] = []
     
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        collectionView.delegate = self
-//        collectionView.dataSource = self
-//    }
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        
+        dayPickerView.addTarget(self, action: #selector(dayChanged), for: .valueChanged)
+    }
+    @objc private func dayChanged() {
+        title = dayPickerView.selectedDay?.title
+        
+    }
 }
 extension  PhotoViewController: UICollectionViewDelegate {
     

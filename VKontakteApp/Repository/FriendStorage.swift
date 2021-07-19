@@ -48,6 +48,113 @@ class FriendStorage {
                 PhotoModel(place: "Date", imageName: "view9", date: "08.03"),
                                 
             ]),
+            FriendModel(name: "Bill", avatarName: "Bob",
+                               photos: [
+                PhotoModel(place: "Fising", imageName: "view7", date: "24.05"),
+                PhotoModel(place: "Hunting", imageName: "view8", date: "16.09"),
+                PhotoModel(place: "Date", imageName: "view9", date: "08.03"),
+                                
+            ]),
+            FriendModel(name: "Cal", avatarName: "Bob",
+                               photos: [
+                PhotoModel(place: "Fising", imageName: "view7", date: "24.05"),
+                PhotoModel(place: "Hunting", imageName: "view8", date: "16.09"),
+                PhotoModel(place: "Date", imageName: "view9", date: "08.03"),
+                                
+            ]),
+            FriendModel(name: "Clive", avatarName: "Bob",
+                               photos: [
+                PhotoModel(place: "Fising", imageName: "view7", date: "24.05"),
+                PhotoModel(place: "Hunting", imageName: "view8", date: "16.09"),
+                PhotoModel(place: "Date", imageName: "view9", date: "08.03"),
+                                
+            ]),
+            
+            FriendModel(name: "Don", avatarName: "Bob",
+                               photos: [
+                PhotoModel(place: "Fising", imageName: "view7", date: "24.05"),
+                PhotoModel(place: "Hunting", imageName: "view8", date: "16.09"),
+                PhotoModel(place: "Date", imageName: "view9", date: "08.03"),
+                                
+            ]),
+            FriendModel(name: "Dereck", avatarName: "Bob",
+                               photos: [
+                PhotoModel(place: "Fising", imageName: "view7", date: "24.05"),
+                PhotoModel(place: "Hunting", imageName: "view8", date: "16.09"),
+                PhotoModel(place: "Date", imageName: "view9", date: "08.03"),
+                                
+            ]),
+            FriendModel(name: "Evan", avatarName: "Bob",
+                               photos: [
+                PhotoModel(place: "Fising", imageName: "view7", date: "24.05"),
+                PhotoModel(place: "Hunting", imageName: "view8", date: "16.09"),
+                PhotoModel(place: "Date", imageName: "view9", date: "08.03"),
+                                
+            ]),
+            FriendModel(name: "Est", avatarName: "Bob",
+                               photos: [
+                PhotoModel(place: "Fising", imageName: "view7", date: "24.05"),
+                PhotoModel(place: "Hunting", imageName: "view8", date: "16.09"),
+                PhotoModel(place: "Date", imageName: "view9", date: "08.03"),
+                                
+            ]),
+            
+            FriendModel(name: "Fred", avatarName: "Bob",
+                               photos: [
+                PhotoModel(place: "Fising", imageName: "view7", date: "24.05"),
+                PhotoModel(place: "Hunting", imageName: "view8", date: "16.09"),
+                PhotoModel(place: "Date", imageName: "view9", date: "08.03"),
+                                
+            ]),
+            FriendModel(name: "Flip", avatarName: "Bob",
+                               photos: [
+                PhotoModel(place: "Fising", imageName: "view7", date: "24.05"),
+                PhotoModel(place: "Hunting", imageName: "view8", date: "16.09"),
+                PhotoModel(place: "Date", imageName: "view9", date: "08.03"),
+                                
+            ]),
+            FriendModel(name: "George", avatarName: "Bob",
+                               photos: [
+                PhotoModel(place: "Fising", imageName: "view7", date: "24.05"),
+                PhotoModel(place: "Hunting", imageName: "view8", date: "16.09"),
+                PhotoModel(place: "Date", imageName: "view9", date: "08.03"),
+                                
+            ]),
+            FriendModel(name: "Greg", avatarName: "Bob",
+                               photos: [
+                PhotoModel(place: "Fising", imageName: "view7", date: "24.05"),
+                PhotoModel(place: "Hunting", imageName: "view8", date: "16.09"),
+                PhotoModel(place: "Date", imageName: "view9", date: "08.03"),
+                                
+            ]),
+            FriendModel(name: "Hue", avatarName: "Bob",
+                               photos: [
+                PhotoModel(place: "Fising", imageName: "view7", date: "24.05"),
+                PhotoModel(place: "Hunting", imageName: "view8", date: "16.09"),
+                PhotoModel(place: "Date", imageName: "view9", date: "08.03"),
+                                
+            ]),
+            FriendModel(name: "Holl", avatarName: "Bob",
+                               photos: [
+                PhotoModel(place: "Fising", imageName: "view7", date: "24.05"),
+                PhotoModel(place: "Hunting", imageName: "view8", date: "16.09"),
+                PhotoModel(place: "Date", imageName: "view9", date: "08.03"),
+                                
+            ]),
+            FriendModel(name: "Ive", avatarName: "Bob",
+                               photos: [
+                PhotoModel(place: "Fising", imageName: "view7", date: "24.05"),
+                PhotoModel(place: "Hunting", imageName: "view8", date: "16.09"),
+                PhotoModel(place: "Date", imageName: "view9", date: "08.03"),
+                                
+            ]),
+            FriendModel(name: "Illy", avatarName: "Bob",
+                               photos: [
+                PhotoModel(place: "Fising", imageName: "view7", date: "24.05"),
+                PhotoModel(place: "Hunting", imageName: "view8", date: "16.09"),
+                PhotoModel(place: "Date", imageName: "view9", date: "08.03"),
+                                
+            ]),
             
             FriendModel(name: "Josh", avatarName: "Josh",
                                photos: [
@@ -56,9 +163,94 @@ class FriendStorage {
                 PhotoModel(place: "Restaurant", imageName: "view5", date: "18.04"),
                                 
             ]),
+            FriendModel(name: "Jeck", avatarName: "Josh",
+                               photos: [
+                PhotoModel(place: "Fising", imageName: "view7", date: "28.06"),
+                PhotoModel(place: "Date", imageName: "view9", date: "05.10"),
+                PhotoModel(place: "Restaurant", imageName: "view5", date: "18.04"),
+                                
+            ]),
+            FriendModel(name: "Kile", avatarName: "Bob",
+                               photos: [
+                PhotoModel(place: "Fising", imageName: "view7", date: "24.05"),
+                PhotoModel(place: "Hunting", imageName: "view8", date: "16.09"),
+                PhotoModel(place: "Date", imageName: "view9", date: "08.03"),
+                                
+            ]),
+            FriendModel(name: "Kit", avatarName: "Bob",
+                               photos: [
+                PhotoModel(place: "Fising", imageName: "view7", date: "24.05"),
+                PhotoModel(place: "Hunting", imageName: "view8", date: "16.09"),
+                PhotoModel(place: "Date", imageName: "view9", date: "08.03"),
+                                
+            ]),
             
+            FriendModel(name: "Lesly", avatarName: "Josh",
+                               photos: [
+                PhotoModel(place: "Fising", imageName: "view7", date: "28.06"),
+                PhotoModel(place: "Date", imageName: "view9", date: "05.10"),
+                PhotoModel(place: "Restaurant", imageName: "view5", date: "18.04"),
+                                
+            ]),
+            FriendModel(name: "Lloyd", avatarName: "Josh",
+                               photos: [
+                PhotoModel(place: "Fising", imageName: "view7", date: "28.06"),
+                PhotoModel(place: "Date", imageName: "view9", date: "05.10"),
+                PhotoModel(place: "Restaurant", imageName: "view5", date: "18.04"),
+                                
+            ]),
+            FriendModel(name: "Mile", avatarName: "Bob",
+                               photos: [
+                PhotoModel(place: "Fising", imageName: "view7", date: "24.05"),
+                PhotoModel(place: "Hunting", imageName: "view8", date: "16.09"),
+                PhotoModel(place: "Date", imageName: "view9", date: "08.03"),
+                                
+            ]),
+            FriendModel(name: "Mitch", avatarName: "Bob",
+                               photos: [
+                PhotoModel(place: "Fising", imageName: "view7", date: "24.05"),
+                PhotoModel(place: "Hunting", imageName: "view8", date: "16.09"),
+                PhotoModel(place: "Date", imageName: "view9", date: "08.03"),
+                                
+            ]),
             
+            FriendModel(name: "Nick", avatarName: "Josh",
+                               photos: [
+                PhotoModel(place: "Fising", imageName: "view7", date: "28.06"),
+                PhotoModel(place: "Date", imageName: "view9", date: "05.10"),
+                PhotoModel(place: "Restaurant", imageName: "view5", date: "18.04"),
+                                
+            ]),
+            FriendModel(name: "Nil", avatarName: "Josh",
+                               photos: [
+                PhotoModel(place: "Fising", imageName: "view7", date: "28.06"),
+                PhotoModel(place: "Date", imageName: "view9", date: "05.10"),
+                PhotoModel(place: "Restaurant", imageName: "view5", date: "18.04"),
+                                
+            ]),
+            
+            FriendModel(name: "Owen", avatarName: "Pete",
+                               photos: [
+                PhotoModel(place:  "Disco", imageName: "view3", date: "04.05"),
+                PhotoModel(place: "Country", imageName: "view2", date: "25.08"),
+                PhotoModel(place: "Hunting", imageName: "view8", date: "16.09"),
+                                
+            ]),
+            FriendModel(name: "Oak", avatarName: "Pete",
+                               photos: [
+                PhotoModel(place:  "Disco", imageName: "view3", date: "04.05"),
+                PhotoModel(place: "Country", imageName: "view2", date: "25.08"),
+                PhotoModel(place: "Hunting", imageName: "view8", date: "16.09"),
+                                
+            ]),
             FriendModel(name: "Pete", avatarName: "Pete",
+                               photos: [
+                PhotoModel(place:  "Disco", imageName: "view3", date: "04.05"),
+                PhotoModel(place: "Country", imageName: "view2", date: "25.08"),
+                PhotoModel(place: "Hunting", imageName: "view8", date: "16.09"),
+                                
+            ]),
+            FriendModel(name: "Prue", avatarName: "Pete",
                                photos: [
                 PhotoModel(place:  "Disco", imageName: "view3", date: "04.05"),
                 PhotoModel(place: "Country", imageName: "view2", date: "25.08"),

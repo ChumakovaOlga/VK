@@ -13,7 +13,7 @@
         <scene sceneID="fpJ-Jy-z8T">
             <objects>
                 <viewController id="auo-XM-lL5" customClass="LoginViewController" customModule="VKontakteApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="glf-cM-6Ed">
+                    <view key="view" contentMode="scaleToFill" id="glf-cM-6Ed" customClass="GradientView" customModule="VKontakteApp" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -118,6 +118,26 @@
                             <constraint firstItem="vUP-we-1Le" firstAttribute="width" secondItem="kxG-KW-MhU" secondAttribute="width" id="lKM-Vi-UH0"/>
                             <constraint firstItem="h0P-Ml-veC" firstAttribute="leading" secondItem="kxG-KW-MhU" secondAttribute="leading" id="qTh-zs-90S"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                <color key="value" red="0.74273827010000004" green="0.89000000000000001" blue="0.76561767759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                <color key="value" red="0.07332425538091436" green="0.66666668650000005" blue="0.51223635711599746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="startLocation">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="endLocation">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="point" keyPath="startPoint">
+                                <point key="value" x="0.0" y="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="point" keyPath="endPoint">
+                                <point key="value" x="0.0" y="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <connections>
                         <outlet property="loginButton" destination="d6u-6G-pac" id="LcK-Ba-DIl"/>
@@ -222,7 +242,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4Os-1b-rSm">
-                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
+                                <rect key="frame" x="0.0" y="116" width="414" height="643"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <inset key="scrollIndicatorInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="oWN-yC-9t8">
@@ -290,19 +310,28 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fdl-WY-5X1" customClass="DayPicker" customModule="VKontakteApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="56" width="414" height="60"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="22v-X2-zRu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="4Os-1b-rSm" firstAttribute="top" secondItem="22v-X2-zRu" secondAttribute="top" id="92H-lT-ddb"/>
+                            <constraint firstItem="4Os-1b-rSm" firstAttribute="top" secondItem="22v-X2-zRu" secondAttribute="top" constant="60" id="92H-lT-ddb"/>
                             <constraint firstItem="22v-X2-zRu" firstAttribute="trailing" secondItem="4Os-1b-rSm" secondAttribute="trailing" id="C01-NH-Zfv"/>
                             <constraint firstItem="4Os-1b-rSm" firstAttribute="leading" secondItem="22v-X2-zRu" secondAttribute="leading" id="KSG-Dv-CWC"/>
                             <constraint firstItem="22v-X2-zRu" firstAttribute="bottom" secondItem="4Os-1b-rSm" secondAttribute="bottom" id="Thp-qO-HVc"/>
+                            <constraint firstItem="fdl-WY-5X1" firstAttribute="top" secondItem="22v-X2-zRu" secondAttribute="top" id="Xna-oa-BsR"/>
+                            <constraint firstItem="fdl-WY-5X1" firstAttribute="trailing" secondItem="22v-X2-zRu" secondAttribute="trailing" id="aQ8-tN-zar"/>
+                            <constraint firstItem="4Os-1b-rSm" firstAttribute="top" secondItem="fdl-WY-5X1" secondAttribute="bottom" id="qFj-AF-CZo"/>
+                            <constraint firstItem="fdl-WY-5X1" firstAttribute="leading" secondItem="22v-X2-zRu" secondAttribute="leading" id="z9R-HV-6Jz"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="o4l-fc-VXB"/>
                     <connections>
                         <outlet property="collectionView" destination="4Os-1b-rSm" id="R65-mv-Mlb"/>
+                        <outlet property="dayPickerView" destination="fdl-WY-5X1" id="uh6-RI-BzC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RIZ-0l-FMA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -392,37 +421,40 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FriendTableViewCell" id="aPQ-rp-d5h" customClass="FriendTableViewCell" customModule="VKontakteApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="138.5"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="116.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aPQ-rp-d5h" id="NV1-AF-cfK">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="138.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="116.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kux-4P-DQa">
-                                                    <rect key="frame" x="52" y="19.5" width="100" height="100"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="100" id="3Ol-Zt-I6B"/>
-                                                        <constraint firstAttribute="width" constant="100" id="kiK-8P-jzI"/>
-                                                    </constraints>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wka-EF-Qty">
-                                                    <rect key="frame" x="168" y="59" width="41.5" height="21"/>
+                                                    <rect key="frame" x="152" y="48" width="41.5" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2MW-Qn-lmY" customClass="AvatarView" customModule="VKontakteApp" customModuleProvider="target">
+                                                    <rect key="frame" x="36" y="8" width="100" height="100.5"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="bqs-Vl-pri"/>
+                                                        <constraint firstAttribute="width" constant="100" id="f3n-a4-iMa"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="kux-4P-DQa" firstAttribute="leading" secondItem="NV1-AF-cfK" secondAttribute="leadingMargin" constant="32" id="HRJ-jn-amK"/>
+                                                <constraint firstItem="2MW-Qn-lmY" firstAttribute="top" secondItem="NV1-AF-cfK" secondAttribute="top" constant="8" id="1tL-m1-IDn"/>
+                                                <constraint firstItem="2MW-Qn-lmY" firstAttribute="top" secondItem="NV1-AF-cfK" secondAttribute="top" constant="8" id="7fp-NP-QE7"/>
+                                                <constraint firstItem="wka-EF-Qty" firstAttribute="leading" secondItem="2MW-Qn-lmY" secondAttribute="trailing" constant="16" id="8aO-4Q-ogp"/>
+                                                <constraint firstItem="wka-EF-Qty" firstAttribute="centerY" secondItem="2MW-Qn-lmY" secondAttribute="centerY" id="HJE-J3-Dmj"/>
                                                 <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="wka-EF-Qty" secondAttribute="trailing" constant="32" id="Ni7-UP-b4P"/>
-                                                <constraint firstItem="wka-EF-Qty" firstAttribute="leading" secondItem="kux-4P-DQa" secondAttribute="trailing" constant="16" id="P1b-9d-fye"/>
-                                                <constraint firstItem="kux-4P-DQa" firstAttribute="top" secondItem="NV1-AF-cfK" secondAttribute="topMargin" priority="999" constant="8" id="RbZ-ZD-8cc"/>
-                                                <constraint firstItem="wka-EF-Qty" firstAttribute="centerY" secondItem="kux-4P-DQa" secondAttribute="centerY" id="pPr-pb-yYW"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="kux-4P-DQa" secondAttribute="bottom" constant="8" id="zuY-yW-Nwc"/>
+                                                <constraint firstAttribute="trailing" secondItem="2MW-Qn-lmY" secondAttribute="trailing" constant="278" id="kCQ-vd-mi9"/>
+                                                <constraint firstAttribute="bottom" secondItem="2MW-Qn-lmY" secondAttribute="bottom" constant="8" id="x6f-y0-dBF"/>
+                                                <constraint firstItem="2MW-Qn-lmY" firstAttribute="leading" secondItem="NV1-AF-cfK" secondAttribute="leading" constant="36" id="zWF-mP-0ay"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="avatarImageView" destination="kux-4P-DQa" id="2EL-zd-FSl"/>
+                                            <outlet property="avatarView" destination="2MW-Qn-lmY" id="HFR-Qn-oMW"/>
                                             <outlet property="nameLabel" destination="wka-EF-Qty" id="cYs-zm-uan"/>
                                             <segue destination="K4c-cW-Md9" kind="show" identifier="moveToPhoto" id="XD3-mM-WG8"/>
                                         </connections>
@@ -467,7 +499,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Lqm-xd-Exw">
-                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
+                                <rect key="frame" x="0.0" y="116" width="414" height="643"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UCC-ft-PPZ">
                                     <size key="itemSize" width="150" height="150"/>
@@ -534,19 +566,28 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sKP-Ib-tbB" customClass="DayPicker" customModule="VKontakteApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="56" width="414" height="60"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8jV-nO-vve"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Lqm-xd-Exw" firstAttribute="top" secondItem="sKP-Ib-tbB" secondAttribute="bottom" id="5GV-bg-eu0"/>
                             <constraint firstItem="8jV-nO-vve" firstAttribute="bottom" secondItem="Lqm-xd-Exw" secondAttribute="bottom" id="C1e-R2-Arx"/>
-                            <constraint firstItem="Lqm-xd-Exw" firstAttribute="top" secondItem="8jV-nO-vve" secondAttribute="top" id="FOU-1K-RTV"/>
+                            <constraint firstItem="sKP-Ib-tbB" firstAttribute="top" secondItem="8jV-nO-vve" secondAttribute="top" id="F2i-bZ-xyH"/>
+                            <constraint firstItem="Lqm-xd-Exw" firstAttribute="top" secondItem="8jV-nO-vve" secondAttribute="top" constant="60" id="FOU-1K-RTV"/>
                             <constraint firstItem="8jV-nO-vve" firstAttribute="trailing" secondItem="Lqm-xd-Exw" secondAttribute="trailing" id="KuN-fC-gBV"/>
+                            <constraint firstItem="sKP-Ib-tbB" firstAttribute="trailing" secondItem="8jV-nO-vve" secondAttribute="trailing" id="LEd-A1-MEM"/>
+                            <constraint firstItem="sKP-Ib-tbB" firstAttribute="leading" secondItem="8jV-nO-vve" secondAttribute="leading" id="ZZb-lh-9Pl"/>
                             <constraint firstItem="Lqm-xd-Exw" firstAttribute="leading" secondItem="8jV-nO-vve" secondAttribute="leading" id="id8-k5-qsA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1kL-Rg-6E6"/>
                     <connections>
                         <outlet property="collectionView" destination="Lqm-xd-Exw" id="w7R-FH-NOO"/>
+                        <outlet property="dayPickerView" destination="sKP-Ib-tbB" id="Juh-77-6ny"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K5Y-Gc-ld4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -572,49 +613,61 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="66.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4IJ-Kw-Lcx">
-                                                    <rect key="frame" x="348" y="8.5" width="50" height="50"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="50" id="iVn-1Y-Tgl"/>
-                                                        <constraint firstAttribute="width" constant="50" id="zgV-Oj-nO3"/>
-                                                    </constraints>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YcL-vG-6hg">
                                                     <rect key="frame" x="36" y="23" width="296" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="De0-l4-N1q" customClass="AvatarView" customModule="VKontakteApp" customModuleProvider="target">
+                                                    <rect key="frame" x="348" y="8" width="50" height="50.5"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="3jM-GW-6Qg"/>
+                                                        <constraint firstAttribute="width" constant="50" id="ps7-6X-nHL"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="4IJ-Kw-Lcx" firstAttribute="leading" secondItem="YcL-vG-6hg" secondAttribute="trailing" constant="16" id="0HE-A6-8Dl"/>
-                                                <constraint firstItem="4IJ-Kw-Lcx" firstAttribute="top" secondItem="iOf-bQ-V1o" secondAttribute="top" priority="999" constant="8" id="6uB-CJ-xRq"/>
-                                                <constraint firstItem="4IJ-Kw-Lcx" firstAttribute="trailing" secondItem="iOf-bQ-V1o" secondAttribute="trailing" constant="-16" id="71i-A4-c3B"/>
-                                                <constraint firstItem="YcL-vG-6hg" firstAttribute="centerY" secondItem="4IJ-Kw-Lcx" secondAttribute="centerY" id="G9B-sU-lrH"/>
+                                                <constraint firstItem="YcL-vG-6hg" firstAttribute="centerY" secondItem="De0-l4-N1q" secondAttribute="centerY" id="6ev-Fv-aF2"/>
+                                                <constraint firstAttribute="trailing" secondItem="De0-l4-N1q" secondAttribute="trailing" constant="16" id="PTy-5K-0Zk"/>
+                                                <constraint firstItem="De0-l4-N1q" firstAttribute="leading" secondItem="YcL-vG-6hg" secondAttribute="trailing" constant="16" id="Prr-b0-L9Q"/>
                                                 <constraint firstItem="YcL-vG-6hg" firstAttribute="leading" secondItem="iOf-bQ-V1o" secondAttribute="leadingMargin" constant="16" id="Rc3-Yo-eeF"/>
-                                                <constraint firstAttribute="bottom" secondItem="4IJ-Kw-Lcx" secondAttribute="bottom" constant="8" id="yca-Bl-D8J"/>
+                                                <constraint firstItem="De0-l4-N1q" firstAttribute="top" secondItem="iOf-bQ-V1o" secondAttribute="top" constant="8" id="wFH-cx-ZAJ"/>
+                                                <constraint firstAttribute="bottom" secondItem="De0-l4-N1q" secondAttribute="bottom" constant="8" id="yzl-sW-awl"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="avatarImageView" destination="4IJ-Kw-Lcx" id="x8O-PY-5Al"/>
+                                            <outlet property="avatarView" destination="De0-l4-N1q" id="GFF-b2-0v0"/>
                                             <outlet property="nameLabel" destination="YcL-vG-6hg" id="C7W-hx-23h"/>
                                             <segue destination="FnQ-Xy-Z40" kind="unwind" identifier="addFriend" unwindAction="addFriend:" id="Ypd-Cn-Nkv"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cBw-mo-25H" customClass="LettersControl" customModule="VKontakteApp" customModuleProvider="target">
+                                <rect key="frame" x="398" y="106" width="20" height="603"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="nJA-2y-5gg"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aJ1-a6-MNX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="aJ1-a6-MNX" firstAttribute="bottom" secondItem="ror-et-UhI" secondAttribute="bottom" id="BhX-ZA-bHf"/>
                             <constraint firstItem="ror-et-UhI" firstAttribute="leading" secondItem="aJ1-a6-MNX" secondAttribute="leading" id="TUu-Ik-IFf"/>
+                            <constraint firstItem="aJ1-a6-MNX" firstAttribute="bottom" secondItem="cBw-mo-25H" secondAttribute="bottom" constant="50" id="XJl-mM-0SO"/>
+                            <constraint firstItem="cBw-mo-25H" firstAttribute="top" secondItem="aJ1-a6-MNX" secondAttribute="top" constant="50" id="g7c-v9-yVf"/>
                             <constraint firstItem="ror-et-UhI" firstAttribute="top" secondItem="aJ1-a6-MNX" secondAttribute="top" id="id8-vc-tdt"/>
                             <constraint firstItem="aJ1-a6-MNX" firstAttribute="trailing" secondItem="ror-et-UhI" secondAttribute="trailing" id="imk-GX-god"/>
+                            <constraint firstItem="cBw-mo-25H" firstAttribute="trailing" secondItem="aJ1-a6-MNX" secondAttribute="trailing" constant="4" id="lcf-9X-7Ye"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="AllFriends" id="CqW-nA-lVP"/>
                     <connections>
+                        <outlet property="lettersControl" destination="cBw-mo-25H" id="piG-u3-0oY"/>
                         <outlet property="tableView" destination="ror-et-UhI" id="J1u-4q-puS"/>
                     </connections>
                 </viewController>

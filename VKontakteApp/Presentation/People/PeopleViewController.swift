@@ -10,6 +10,7 @@ import UIKit
 final class PeopleViewController: UIViewController {
     
     
+    @IBOutlet var dayPickerView: DayPicker!
     @IBOutlet var collectionView: UICollectionView!
     var peoples: [PeopleModel] = []
     
@@ -17,8 +18,13 @@ final class PeopleViewController: UIViewController {
         super.viewDidLoad()
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        dayPickerView.addTarget(self, action: #selector(dayChanged), for: .valueChanged)
     }
     
+    @objc private func dayChanged() {
+        title = dayPickerView.selectedDay?.title
+    }
 }
 extension PeopleViewController: UICollectionViewDelegate {
     

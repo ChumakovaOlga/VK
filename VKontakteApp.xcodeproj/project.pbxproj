@@ -11,6 +11,8 @@
 		CF7A4E7426A08E470047523E /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A4E7326A08E470047523E /* PhotoViewController.swift */; };
 		CF7A4E7626A097370047523E /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A4E7526A097370047523E /* PhotoCollectionViewCell.swift */; };
 		CF7A4E7C26A2820C0047523E /* LikeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A4E7B26A2820C0047523E /* LikeControl.swift */; };
+		CF7A4E7E26A2C28D0047523E /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A4E7D26A2C28D0047523E /* GradientView.swift */; };
+		CF7A4E8026A2E8140047523E /* DayPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A4E7F26A2E8140047523E /* DayPicker.swift */; };
 		CF7B5AEC269796EC00B63D6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B5AEB269796EC00B63D6B /* AppDelegate.swift */; };
 		CF7B5AEE269796EC00B63D6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B5AED269796EC00B63D6B /* SceneDelegate.swift */; };
 		CF7B5AF3269796ED00B63D6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF7B5AF1269796ED00B63D6B /* Main.storyboard */; };
@@ -30,6 +32,8 @@
 		CF7B5B69269FF2C000B63D6B /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B5B68269FF2C000B63D6B /* PhotoModel.swift */; };
 		CF7B5B6B269FF58000B63D6B /* FriendStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B5B6A269FF58000B63D6B /* FriendStorage.swift */; };
 		CF7B5B6D26A0190900B63D6B /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B5B6C26A0190900B63D6B /* FriendTableViewCell.swift */; };
+		CFCAE02026A41FC300EE5E5B /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCAE01F26A41FC300EE5E5B /* AvatarView.swift */; };
+		CFCAE02426A52A0000EE5E5B /* LettersControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCAE02326A52A0000EE5E5B /* LettersControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,8 @@
 		CF7A4E7326A08E470047523E /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		CF7A4E7526A097370047523E /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		CF7A4E7B26A2820C0047523E /* LikeControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeControl.swift; sourceTree = "<group>"; };
+		CF7A4E7D26A2C28D0047523E /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		CF7A4E7F26A2E8140047523E /* DayPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPicker.swift; sourceTree = "<group>"; };
 		CF7B5AE8269796EC00B63D6B /* VKontakteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKontakteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF7B5AEB269796EC00B63D6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF7B5AED269796EC00B63D6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +64,8 @@
 		CF7B5B68269FF2C000B63D6B /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
 		CF7B5B6A269FF58000B63D6B /* FriendStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendStorage.swift; sourceTree = "<group>"; };
 		CF7B5B6C26A0190900B63D6B /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		CFCAE01F26A41FC300EE5E5B /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		CFCAE02326A52A0000EE5E5B /* LettersControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LettersControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				CF7A4E7A26A281E90047523E /* Controls */,
+				CF7A4E7D26A2C28D0047523E /* GradientView.swift */,
+				CFCAE01F26A41FC300EE5E5B /* AvatarView.swift */,
 			);
 			path = CustomElements;
 			sourceTree = "<group>";
@@ -100,6 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				CF7A4E7B26A2820C0047523E /* LikeControl.swift */,
+				CF7A4E7F26A2E8140047523E /* DayPicker.swift */,
+				CFCAE02326A52A0000EE5E5B /* LettersControl.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -330,17 +342,21 @@
 				CF7B5B65269F27C600B63D6B /* FavouriteFriendViewController.swift in Sources */,
 				CF7B5B44269A29D900B63D6B /* GroupModel.swift in Sources */,
 				CF7A4E7626A097370047523E /* PhotoCollectionViewCell.swift in Sources */,
+				CF7A4E8026A2E8140047523E /* DayPicker.swift in Sources */,
 				CF7B5B69269FF2C000B63D6B /* PhotoModel.swift in Sources */,
 				CF7A4E7426A08E470047523E /* PhotoViewController.swift in Sources */,
 				CF7B5B4D269AAB6900B63D6B /* GroupTableViewCell.swift in Sources */,
 				CF7B5B50269AE57400B63D6B /* AllGroupsViewController.swift in Sources */,
 				CF7B5B53269B024D00B63D6B /* PeopleViewController.swift in Sources */,
+				CF7A4E7E26A2C28D0047523E /* GradientView.swift in Sources */,
 				CF7B5B6B269FF58000B63D6B /* FriendStorage.swift in Sources */,
 				CF7B5B67269FF16C00B63D6B /* FriendModel.swift in Sources */,
 				CF7B5AEC269796EC00B63D6B /* AppDelegate.swift in Sources */,
 				CF7A4E7126A045840047523E /* AllFriendsViewController.swift in Sources */,
 				CF7B5B0926980A9900B63D6B /* FavouriteGroupViewController.swift in Sources */,
 				CF7B5B48269A345400B63D6B /* PeopleModel.swift in Sources */,
+				CFCAE02426A52A0000EE5E5B /* LettersControl.swift in Sources */,
+				CFCAE02026A41FC300EE5E5B /* AvatarView.swift in Sources */,
 				CF7B5AEE269796EC00B63D6B /* SceneDelegate.swift in Sources */,
 				CF7B5B55269B15CF00B63D6B /* PeopleCollectionViewCell.swift in Sources */,
 				CF7B5B6D26A0190900B63D6B /* FriendTableViewCell.swift in Sources */,
