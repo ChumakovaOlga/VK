@@ -44,5 +44,4 @@ extension  PhotoViewController: UICollectionViewDataSource {
         return cell
     }
     
-    
 }

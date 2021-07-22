@@ -20,13 +20,15 @@ class FavouriteFriendViewController: UIViewController {
    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "moveToPhoto",
-           let destinationController =  segue.destination as? PhotoViewController,
-           let indexPath = sender as? IndexPath
+           let destinationController = segue.destination as? PhotoViewController,
+           
+           let indexPath = tableView.indexPathForSelectedRow
            {
             let friend = friends[indexPath.row]
             destinationController.photos = friend.photos
             destinationController.title = friend.name
         }
+
     }
     
     @IBAction func addFriend(_ segue: UIStoryboardSegue) {
@@ -35,9 +37,10 @@ class FavouriteFriendViewController: UIViewController {
             let sourceController = segue.source as? AllFriendsViewController,
             let indexPath = sourceController.tableView.indexPathForSelectedRow
         else {
-            return
+            return 
         }
-        let friend = sourceController.friends[indexPath.row]
+        let friend = sourceController.friendsSection[indexPath.section][indexPath.row]
+        
         if !friends.contains(where: {$0.name == friend.name}) {
             friends.append(friend)
             tableView.reloadData()
@@ -65,10 +68,7 @@ extension FavouriteFriendViewController: UITableViewDelegate, UITableViewDataSou
         cell.configure(friend: friend)
         return cell
     }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "moveToPhoto", sender: indexPath)
-    }
-    
+
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         //Если была нажата кнопка "Удалить"
         if editingStyle == .delete {

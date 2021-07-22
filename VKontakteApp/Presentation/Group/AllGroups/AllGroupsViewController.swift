@@ -41,7 +41,5 @@ extension AllGroupsViewController: UITableViewDelegate, UITableViewDataSource {
         cell.configure(group: group)
         return cell
     }
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        performSegue(withIdentifier: "moveToPeople", sender: nil)
-//    }
+
 }
