@@ -7,15 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF7A4E7126A045840047523E /* AllFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A4E7026A045840047523E /* AllFriendsViewController.swift */; };
+		CF7A4E7426A08E470047523E /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A4E7326A08E470047523E /* PhotoViewController.swift */; };
+		CF7A4E7626A097370047523E /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A4E7526A097370047523E /* PhotoCollectionViewCell.swift */; };
+		CF7A4E7C26A2820C0047523E /* LikeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A4E7B26A2820C0047523E /* LikeControl.swift */; };
+		CF7A4E7E26A2C28D0047523E /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A4E7D26A2C28D0047523E /* GradientView.swift */; };
+		CF7A4E8026A2E8140047523E /* DayPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7A4E7F26A2E8140047523E /* DayPicker.swift */; };
 		CF7B5AEC269796EC00B63D6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B5AEB269796EC00B63D6B /* AppDelegate.swift */; };
 		CF7B5AEE269796EC00B63D6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B5AED269796EC00B63D6B /* SceneDelegate.swift */; };
 		CF7B5AF3269796ED00B63D6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF7B5AF1269796ED00B63D6B /* Main.storyboard */; };
 		CF7B5AF5269796F300B63D6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF7B5AF4269796F300B63D6B /* Assets.xcassets */; };
 		CF7B5AF8269796F300B63D6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF7B5AF6269796F300B63D6B /* LaunchScreen.storyboard */; };
 		CF7B5B052697980B00B63D6B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B5B042697980B00B63D6B /* LoginViewController.swift */; };
+		CF7B5B0926980A9900B63D6B /* FavouriteGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B5B0826980A9800B63D6B /* FavouriteGroupViewController.swift */; };
+		CF7B5B44269A29D900B63D6B /* GroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B5B43269A29D900B63D6B /* GroupModel.swift */; };
+		CF7B5B48269A345400B63D6B /* PeopleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B5B47269A345400B63D6B /* PeopleModel.swift */; };
+		CF7B5B4B269A3D6A00B63D6B /* GroupStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B5B4A269A3D6A00B63D6B /* GroupStorage.swift */; };
+		CF7B5B4D269AAB6900B63D6B /* GroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B5B4C269AAB6800B63D6B /* GroupTableViewCell.swift */; };
+		CF7B5B50269AE57400B63D6B /* AllGroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B5B4F269AE57300B63D6B /* AllGroupsViewController.swift */; };
+		CF7B5B53269B024D00B63D6B /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B5B52269B024D00B63D6B /* PeopleViewController.swift */; };
+		CF7B5B55269B15CF00B63D6B /* PeopleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B5B54269B15CF00B63D6B /* PeopleCollectionViewCell.swift */; };
+		CF7B5B65269F27C600B63D6B /* FavouriteFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B5B64269F27C600B63D6B /* FavouriteFriendViewController.swift */; };
+		CF7B5B67269FF16C00B63D6B /* FriendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B5B66269FF16B00B63D6B /* FriendModel.swift */; };
+		CF7B5B69269FF2C000B63D6B /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B5B68269FF2C000B63D6B /* PhotoModel.swift */; };
+		CF7B5B6B269FF58000B63D6B /* FriendStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B5B6A269FF58000B63D6B /* FriendStorage.swift */; };
+		CF7B5B6D26A0190900B63D6B /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B5B6C26A0190900B63D6B /* FriendTableViewCell.swift */; };
+		CF8DE86826A93FCC00D963BA /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8DE86726A93FCC00D963BA /* FriendCell.swift */; };
+		CF8DE86A26A9404A00D963BA /* FriendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF8DE86926A9404A00D963BA /* FriendCell.xib */; };
+		CF8DE86C26A9633F00D963BA /* FriendHeaderSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8DE86B26A9633E00D963BA /* FriendHeaderSection.swift */; };
+		CF8DE86E26A9891400D963BA /* PhotoCollectionCustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8DE86D26A9891400D963BA /* PhotoCollectionCustomLayout.swift */; };
+		CFCAE02026A41FC300EE5E5B /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCAE01F26A41FC300EE5E5B /* AvatarView.swift */; };
+		CFCAE02426A52A0000EE5E5B /* LettersControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCAE02326A52A0000EE5E5B /* LettersControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF7A4E7026A045840047523E /* AllFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFriendsViewController.swift; sourceTree = "<group>"; };
+		CF7A4E7326A08E470047523E /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		CF7A4E7526A097370047523E /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		CF7A4E7B26A2820C0047523E /* LikeControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeControl.swift; sourceTree = "<group>"; };
+		CF7A4E7D26A2C28D0047523E /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		CF7A4E7F26A2E8140047523E /* DayPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPicker.swift; sourceTree = "<group>"; };
 		CF7B5AE8269796EC00B63D6B /* VKontakteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKontakteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF7B5AEB269796EC00B63D6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF7B5AED269796EC00B63D6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +55,25 @@
 		CF7B5AF7269796F300B63D6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF7B5AF9269796F300B63D6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF7B5B042697980B00B63D6B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CF7B5B0826980A9800B63D6B /* FavouriteGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteGroupViewController.swift; sourceTree = "<group>"; };
+		CF7B5B43269A29D900B63D6B /* GroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupModel.swift; sourceTree = "<group>"; };
+		CF7B5B47269A345400B63D6B /* PeopleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleModel.swift; sourceTree = "<group>"; };
+		CF7B5B4A269A3D6A00B63D6B /* GroupStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupStorage.swift; sourceTree = "<group>"; };
+		CF7B5B4C269AAB6800B63D6B /* GroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTableViewCell.swift; sourceTree = "<group>"; };
+		CF7B5B4F269AE57300B63D6B /* AllGroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupsViewController.swift; sourceTree = "<group>"; };
+		CF7B5B52269B024D00B63D6B /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		CF7B5B54269B15CF00B63D6B /* PeopleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCollectionViewCell.swift; sourceTree = "<group>"; };
+		CF7B5B64269F27C600B63D6B /* FavouriteFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteFriendViewController.swift; sourceTree = "<group>"; };
+		CF7B5B66269FF16B00B63D6B /* FriendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendModel.swift; sourceTree = "<group>"; };
+		CF7B5B68269FF2C000B63D6B /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		CF7B5B6A269FF58000B63D6B /* FriendStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendStorage.swift; sourceTree = "<group>"; };
+		CF7B5B6C26A0190900B63D6B /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		CF8DE86726A93FCC00D963BA /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
+		CF8DE86926A9404A00D963BA /* FriendCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendCell.xib; sourceTree = "<group>"; };
+		CF8DE86B26A9633E00D963BA /* FriendHeaderSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendHeaderSection.swift; sourceTree = "<group>"; };
+		CF8DE86D26A9891400D963BA /* PhotoCollectionCustomLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionCustomLayout.swift; sourceTree = "<group>"; };
+		CFCAE01F26A41FC300EE5E5B /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		CFCAE02326A52A0000EE5E5B /* LettersControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LettersControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +87,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF7A4E6F26A044D10047523E /* AllFriends */ = {
+			isa = PBXGroup;
+			children = (
+				CF7A4E7026A045840047523E /* AllFriendsViewController.swift */,
+			);
+			path = AllFriends;
+			sourceTree = "<group>";
+		};
+		CF7A4E7226A08E270047523E /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				CF7A4E7326A08E470047523E /* PhotoViewController.swift */,
+				CF7A4E7526A097370047523E /* PhotoCollectionViewCell.swift */,
+				CF8DE86D26A9891400D963BA /* PhotoCollectionCustomLayout.swift */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
+		CF7A4E7926A2818B0047523E /* CustomElements */ = {
+			isa = PBXGroup;
+			children = (
+				CF7A4E7A26A281E90047523E /* Controls */,
+				CF7A4E7D26A2C28D0047523E /* GradientView.swift */,
+				CFCAE01F26A41FC300EE5E5B /* AvatarView.swift */,
+			);
+			path = CustomElements;
+			sourceTree = "<group>";
+		};
+		CF7A4E7A26A281E90047523E /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				CF7A4E7B26A2820C0047523E /* LikeControl.swift */,
+				CF7A4E7F26A2E8140047523E /* DayPicker.swift */,
+				CFCAE02326A52A0000EE5E5B /* LettersControl.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
 		CF7B5ADF269796EC00B63D6B = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +144,9 @@
 		CF7B5AEA269796EC00B63D6B /* VKontakteApp */ = {
 			isa = PBXGroup;
 			children = (
+				CF7A4E7926A2818B0047523E /* CustomElements */,
+				CF7B5B49269A3D2300B63D6B /* Repository */,
+				CF7B5B40269A286000B63D6B /* Models */,
 				CF7B5AFF2697972F00B63D6B /* AppDelegate */,
 				CF7B5AF1269796ED00B63D6B /* Main.storyboard */,
 				CF7B5B02269797D500B63D6B /* Presentation */,
@@ -94,6 +185,10 @@
 		CF7B5B02269797D500B63D6B /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				CF7A4E7226A08E270047523E /* Photo */,
+				CF7B5B62269F26D900B63D6B /* Friend */,
+				CF7B5B51269B018900B63D6B /* People */,
+				CF7B5B06269809CF00B63D6B /* Group */,
 				CF7B5B03269797E800B63D6B /* Login */,
 			);
 			path = Presentation;
@@ -105,6 +200,90 @@
 				CF7B5B042697980B00B63D6B /* LoginViewController.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		CF7B5B06269809CF00B63D6B /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				CF7B5B4E269AE51700B63D6B /* AllGroups */,
+				CF7B5B0726980A3300B63D6B /* FavouriteGroup */,
+				CF7B5B4C269AAB6800B63D6B /* GroupTableViewCell.swift */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
+		CF7B5B0726980A3300B63D6B /* FavouriteGroup */ = {
+			isa = PBXGroup;
+			children = (
+				CF7B5B0826980A9800B63D6B /* FavouriteGroupViewController.swift */,
+			);
+			path = FavouriteGroup;
+			sourceTree = "<group>";
+		};
+		CF7B5B40269A286000B63D6B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CF7B5B43269A29D900B63D6B /* GroupModel.swift */,
+				CF7B5B47269A345400B63D6B /* PeopleModel.swift */,
+				CF7B5B66269FF16B00B63D6B /* FriendModel.swift */,
+				CF7B5B68269FF2C000B63D6B /* PhotoModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CF7B5B49269A3D2300B63D6B /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				CF7B5B4A269A3D6A00B63D6B /* GroupStorage.swift */,
+				CF7B5B6A269FF58000B63D6B /* FriendStorage.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		CF7B5B4E269AE51700B63D6B /* AllGroups */ = {
+			isa = PBXGroup;
+			children = (
+				CF7B5B4F269AE57300B63D6B /* AllGroupsViewController.swift */,
+			);
+			path = AllGroups;
+			sourceTree = "<group>";
+		};
+		CF7B5B51269B018900B63D6B /* People */ = {
+			isa = PBXGroup;
+			children = (
+				CF7B5B52269B024D00B63D6B /* PeopleViewController.swift */,
+				CF7B5B54269B15CF00B63D6B /* PeopleCollectionViewCell.swift */,
+			);
+			path = People;
+			sourceTree = "<group>";
+		};
+		CF7B5B62269F26D900B63D6B /* Friend */ = {
+			isa = PBXGroup;
+			children = (
+				CF8DE86626A93F9A00D963BA /* FriendCell */,
+				CF7A4E6F26A044D10047523E /* AllFriends */,
+				CF7B5B63269F276100B63D6B /* FavouriteFriend */,
+				CF7B5B6C26A0190900B63D6B /* FriendTableViewCell.swift */,
+				CF8DE86B26A9633E00D963BA /* FriendHeaderSection.swift */,
+			);
+			path = Friend;
+			sourceTree = "<group>";
+		};
+		CF7B5B63269F276100B63D6B /* FavouriteFriend */ = {
+			isa = PBXGroup;
+			children = (
+				CF7B5B64269F27C600B63D6B /* FavouriteFriendViewController.swift */,
+			);
+			path = FavouriteFriend;
+			sourceTree = "<group>";
+		};
+		CF8DE86626A93F9A00D963BA /* FriendCell */ = {
+			isa = PBXGroup;
+			children = (
+				CF8DE86726A93FCC00D963BA /* FriendCell.swift */,
+				CF8DE86926A9404A00D963BA /* FriendCell.xib */,
+			);
+			path = FriendCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +346,7 @@
 				CF7B5AF8269796F300B63D6B /* LaunchScreen.storyboard in Resources */,
 				CF7B5AF5269796F300B63D6B /* Assets.xcassets in Resources */,
 				CF7B5AF3269796ED00B63D6B /* Main.storyboard in Resources */,
+				CF8DE86A26A9404A00D963BA /* FriendCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,9 +357,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF8DE86C26A9633F00D963BA /* FriendHeaderSection.swift in Sources */,
 				CF7B5B052697980B00B63D6B /* LoginViewController.swift in Sources */,
+				CF7B5B4B269A3D6A00B63D6B /* GroupStorage.swift in Sources */,
+				CF8DE86E26A9891400D963BA /* PhotoCollectionCustomLayout.swift in Sources */,
+				CF7A4E7C26A2820C0047523E /* LikeControl.swift in Sources */,
+				CF7B5B65269F27C600B63D6B /* FavouriteFriendViewController.swift in Sources */,
+				CF8DE86826A93FCC00D963BA /* FriendCell.swift in Sources */,
+				CF7B5B44269A29D900B63D6B /* GroupModel.swift in Sources */,
+				CF7A4E7626A097370047523E /* PhotoCollectionViewCell.swift in Sources */,
+				CF7A4E8026A2E8140047523E /* DayPicker.swift in Sources */,
+				CF7B5B69269FF2C000B63D6B /* PhotoModel.swift in Sources */,
+				CF7A4E7426A08E470047523E /* PhotoViewController.swift in Sources */,
+				CF7B5B4D269AAB6900B63D6B /* GroupTableViewCell.swift in Sources */,
+				CF7B5B50269AE57400B63D6B /* AllGroupsViewController.swift in Sources */,
+				CF7B5B53269B024D00B63D6B /* PeopleViewController.swift in Sources */,
+				CF7A4E7E26A2C28D0047523E /* GradientView.swift in Sources */,
+				CF7B5B6B269FF58000B63D6B /* FriendStorage.swift in Sources */,
+				CF7B5B67269FF16C00B63D6B /* FriendModel.swift in Sources */,
 				CF7B5AEC269796EC00B63D6B /* AppDelegate.swift in Sources */,
+				CF7A4E7126A045840047523E /* AllFriendsViewController.swift in Sources */,
+				CF7B5B0926980A9900B63D6B /* FavouriteGroupViewController.swift in Sources */,
+				CF7B5B48269A345400B63D6B /* PeopleModel.swift in Sources */,
+				CFCAE02426A52A0000EE5E5B /* LettersControl.swift in Sources */,
+				CFCAE02026A41FC300EE5E5B /* AvatarView.swift in Sources */,
 				CF7B5AEE269796EC00B63D6B /* SceneDelegate.swift in Sources */,
+				CF7B5B55269B15CF00B63D6B /* PeopleCollectionViewCell.swift in Sources */,
+				CF7B5B6D26A0190900B63D6B /* FriendTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
