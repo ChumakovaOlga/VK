@@ -57,9 +57,10 @@ class LikeControl: UIControl {
             likeString = "-"
         }
         UIView.transition(with: likeCountLabel,
-                          duration: 0.3,
+                          duration: 0.9,
                           options: .transitionFlipFromTop,
-                          animations: {[unowned self] in
+                          animations: {
+                          self.imageView.center = CGPoint.init(x: 10, y: 25)
                           self.likeCountLabel.text = String(likeString!)
         })
         

@@ -75,6 +75,19 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FEe-XA-WId">
+                                                <rect key="frame" x="132" y="251" width="150" height="4"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="progressTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="trackTintColor" systemColor="systemPinkColor"/>
+                                            </progressView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgv-Rw-8qv">
+                                                <rect key="frame" x="186" y="276" width="75" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -140,11 +153,14 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <connections>
+                        <outlet property="button" destination="d6u-6G-pac" id="UYx-XS-6OE"/>
                         <outlet property="loginButton" destination="d6u-6G-pac" id="LcK-Ba-DIl"/>
                         <outlet property="loginLabel" destination="nHe-d8-0i1" id="rOH-la-gw4"/>
                         <outlet property="loginTextField" destination="WMW-V6-XpV" id="6tE-B0-TST"/>
                         <outlet property="passwordLabel" destination="GDc-CW-0JN" id="phs-If-Tty"/>
                         <outlet property="passwordTextField" destination="UXl-2G-RXU" id="rSU-QH-0cr"/>
+                        <outlet property="progressLabel" destination="fgv-Rw-8qv" id="mTV-2R-kkk"/>
+                        <outlet property="progressView" destination="FEe-XA-WId" id="Yc7-bU-cbd"/>
                         <outlet property="scrollView" destination="h0P-Ml-veC" id="FnN-Ic-uWX"/>
                         <outlet property="titleImageView" destination="Dzc-un-Stg" id="4Le-DP-OeH"/>
                         <outlet property="titleLabel" destination="dM9-YW-Nw8" id="cAd-Ic-fxg"/>
@@ -715,6 +731,9 @@
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

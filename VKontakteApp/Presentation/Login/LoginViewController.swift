@@ -11,6 +11,12 @@ final class LoginViewController: UIViewController {
     @IBOutlet private weak var scrollView: UIScrollView!
     @IBOutlet private weak var titleImageView: UIImageView!
     @IBOutlet private weak var titleLabel: UILabel!
+    
+    @IBOutlet private var progressView: UIProgressView!
+    
+    @IBOutlet private var progressLabel: UILabel!
+    
+    @IBOutlet var button: UIButton!
     @IBOutlet private weak var loginLabel: UILabel!
     @IBOutlet private weak var loginTextField: UITextField!
     @IBOutlet private weak var passwordLabel: UILabel!
@@ -19,8 +25,26 @@ final class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateProgressView), userInfo: nil, repeats: true)
+        progressView.setProgress(0, animated: true)
+        button.isHidden = true
+        button.alpha = 0
         setViews()
     }
+    
+    @objc func updateProgressView() {
+        if progressView.progress != 1 {
+            self.progressView.progress += 2/10
+        } else {
+            self.button.isHidden = false
+            UIView.animate(withDuration: 0.4, animations: {() -> Void in
+                self.button.alpha = 1
+            })
+            self.progressLabel.text = "finished"
+        }
+       
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
