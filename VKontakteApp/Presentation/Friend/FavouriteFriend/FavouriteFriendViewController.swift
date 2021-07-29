@@ -17,6 +17,13 @@ class FavouriteFriendViewController: UIViewController {
         let storage = FriendStorage()
         friends = storage.friends
     }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {//когда view уже на экране
+        super.viewDidAppear(animated)
+        layerAnimation()
+      
+    }
    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "moveToPhoto",
@@ -49,6 +56,34 @@ class FavouriteFriendViewController: UIViewController {
 }
  
 extension FavouriteFriendViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    
+    func layerAnimation() {
+   
+        
+        let animation = CABasicAnimation(keyPath: #keyPath(CALayer.opacity))
+        animation.fromValue = 0
+        animation.toValue = 1
+     
+        
+        
+        let identityPosition = tableView.layer.position.x
+        let animationTransition = CABasicAnimation(keyPath: "position.x")
+        
+        animationTransition.fromValue = 500
+        animationTransition.toValue = identityPosition
+     
+        
+        let animationsGroup = CAAnimationGroup()
+        animationsGroup.duration = 1
+        animationsGroup.fillMode = .backwards
+        animationsGroup.isRemovedOnCompletion = false
+        animationsGroup.animations = [animation, animationTransition]
+        
+        
+        tableView.layer.add(animationsGroup, forKey: nil)
+}
+    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         1
