@@ -215,7 +215,6 @@
                                         <connections>
                                             <outlet property="avatarImageView" destination="d1Y-Y7-F6z" id="fPQ-ZL-Hva"/>
                                             <outlet property="nameLabel" destination="Hh9-bq-1Of" id="XGE-QI-gC8"/>
-                                            <segue destination="alx-Z7-Ffr" kind="show" identifier="moveToPeople" id="f1b-1k-BBQ"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -243,6 +242,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="CPp-zw-qo8" id="2kX-s8-37q"/>
+                        <segue destination="alx-Z7-Ffr" kind="show" identifier="moveToPeople" id="hbz-3e-7DT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gQZ-RL-Nk9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -684,7 +684,7 @@
         <!--Friends-->
         <scene sceneID="eAw-kR-Ipa">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jpR-K1-ZyP" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jpR-K1-ZyP" customClass="CustomNavControllerInteractiv" customModule="VKontakteApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Friends" image="person.2" catalog="system" selectedImage="person.2.fill" id="vqn-2R-LiJ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sJv-Y5-WsT">

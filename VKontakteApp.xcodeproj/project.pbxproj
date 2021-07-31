@@ -38,6 +38,11 @@
 		CF8DE86E26A9891400D963BA /* PhotoCollectionCustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8DE86D26A9891400D963BA /* PhotoCollectionCustomLayout.swift */; };
 		CFCAE02026A41FC300EE5E5B /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCAE01F26A41FC300EE5E5B /* AvatarView.swift */; };
 		CFCAE02426A52A0000EE5E5B /* LettersControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCAE02326A52A0000EE5E5B /* LettersControl.swift */; };
+		CFFEE99026B560BC00E7C344 /* PopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFEE98F26B560BC00E7C344 /* PopAnimator.swift */; };
+		CFFEE99226B560CE00E7C344 /* PushAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFEE99126B560CE00E7C344 /* PushAnimator.swift */; };
+		CFFEE99526B561CE00E7C344 /* CustomNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFEE99426B561CE00E7C344 /* CustomNavController.swift */; };
+		CFFEE99726B5632C00E7C344 /* CustomNavControllerInteractive.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFEE99626B5632C00E7C344 /* CustomNavControllerInteractive.swift */; };
+		CFFEE99A26B563C500E7C344 /* InteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFEE99926B563C500E7C344 /* InteractiveTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +79,11 @@
 		CF8DE86D26A9891400D963BA /* PhotoCollectionCustomLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionCustomLayout.swift; sourceTree = "<group>"; };
 		CFCAE01F26A41FC300EE5E5B /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		CFCAE02326A52A0000EE5E5B /* LettersControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LettersControl.swift; sourceTree = "<group>"; };
+		CFFEE98F26B560BC00E7C344 /* PopAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopAnimator.swift; sourceTree = "<group>"; };
+		CFFEE99126B560CE00E7C344 /* PushAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushAnimator.swift; sourceTree = "<group>"; };
+		CFFEE99426B561CE00E7C344 /* CustomNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavController.swift; sourceTree = "<group>"; };
+		CFFEE99626B5632C00E7C344 /* CustomNavControllerInteractive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavControllerInteractive.swift; sourceTree = "<group>"; };
+		CFFEE99926B563C500E7C344 /* InteractiveTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +118,7 @@
 		CF7A4E7926A2818B0047523E /* CustomElements */ = {
 			isa = PBXGroup;
 			children = (
+				CFFEE99326B561AD00E7C344 /* NavController */,
 				CF7A4E7A26A281E90047523E /* Controls */,
 				CF7A4E7D26A2C28D0047523E /* GradientView.swift */,
 				CFCAE01F26A41FC300EE5E5B /* AvatarView.swift */,
@@ -144,6 +155,7 @@
 		CF7B5AEA269796EC00B63D6B /* VKontakteApp */ = {
 			isa = PBXGroup;
 			children = (
+				CFFEE98D26B5608B00E7C344 /* CustomTransition */,
 				CF7A4E7926A2818B0047523E /* CustomElements */,
 				CF7B5B49269A3D2300B63D6B /* Repository */,
 				CF7B5B40269A286000B63D6B /* Models */,
@@ -286,6 +298,41 @@
 			path = FriendCell;
 			sourceTree = "<group>";
 		};
+		CFFEE98D26B5608B00E7C344 /* CustomTransition */ = {
+			isa = PBXGroup;
+			children = (
+				CFFEE99826B5639E00E7C344 /* InteractiveTransition */,
+				CFFEE98E26B560A100E7C344 /* Animators */,
+			);
+			path = CustomTransition;
+			sourceTree = "<group>";
+		};
+		CFFEE98E26B560A100E7C344 /* Animators */ = {
+			isa = PBXGroup;
+			children = (
+				CFFEE98F26B560BC00E7C344 /* PopAnimator.swift */,
+				CFFEE99126B560CE00E7C344 /* PushAnimator.swift */,
+			);
+			path = Animators;
+			sourceTree = "<group>";
+		};
+		CFFEE99326B561AD00E7C344 /* NavController */ = {
+			isa = PBXGroup;
+			children = (
+				CFFEE99426B561CE00E7C344 /* CustomNavController.swift */,
+				CFFEE99626B5632C00E7C344 /* CustomNavControllerInteractive.swift */,
+			);
+			path = NavController;
+			sourceTree = "<group>";
+		};
+		CFFEE99826B5639E00E7C344 /* InteractiveTransition */ = {
+			isa = PBXGroup;
+			children = (
+				CFFEE99926B563C500E7C344 /* InteractiveTransition.swift */,
+			);
+			path = InteractiveTransition;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -365,25 +412,30 @@
 				CF7B5B65269F27C600B63D6B /* FavouriteFriendViewController.swift in Sources */,
 				CF8DE86826A93FCC00D963BA /* FriendCell.swift in Sources */,
 				CF7B5B44269A29D900B63D6B /* GroupModel.swift in Sources */,
+				CFFEE99226B560CE00E7C344 /* PushAnimator.swift in Sources */,
 				CF7A4E7626A097370047523E /* PhotoCollectionViewCell.swift in Sources */,
 				CF7A4E8026A2E8140047523E /* DayPicker.swift in Sources */,
 				CF7B5B69269FF2C000B63D6B /* PhotoModel.swift in Sources */,
 				CF7A4E7426A08E470047523E /* PhotoViewController.swift in Sources */,
 				CF7B5B4D269AAB6900B63D6B /* GroupTableViewCell.swift in Sources */,
 				CF7B5B50269AE57400B63D6B /* AllGroupsViewController.swift in Sources */,
+				CFFEE99026B560BC00E7C344 /* PopAnimator.swift in Sources */,
 				CF7B5B53269B024D00B63D6B /* PeopleViewController.swift in Sources */,
 				CF7A4E7E26A2C28D0047523E /* GradientView.swift in Sources */,
 				CF7B5B6B269FF58000B63D6B /* FriendStorage.swift in Sources */,
 				CF7B5B67269FF16C00B63D6B /* FriendModel.swift in Sources */,
 				CF7B5AEC269796EC00B63D6B /* AppDelegate.swift in Sources */,
 				CF7A4E7126A045840047523E /* AllFriendsViewController.swift in Sources */,
+				CFFEE99726B5632C00E7C344 /* CustomNavControllerInteractive.swift in Sources */,
 				CF7B5B0926980A9900B63D6B /* FavouriteGroupViewController.swift in Sources */,
 				CF7B5B48269A345400B63D6B /* PeopleModel.swift in Sources */,
 				CFCAE02426A52A0000EE5E5B /* LettersControl.swift in Sources */,
 				CFCAE02026A41FC300EE5E5B /* AvatarView.swift in Sources */,
 				CF7B5AEE269796EC00B63D6B /* SceneDelegate.swift in Sources */,
 				CF7B5B55269B15CF00B63D6B /* PeopleCollectionViewCell.swift in Sources */,
+				CFFEE99526B561CE00E7C344 /* CustomNavController.swift in Sources */,
 				CF7B5B6D26A0190900B63D6B /* FriendTableViewCell.swift in Sources */,
+				CFFEE99A26B563C500E7C344 /* InteractiveTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
