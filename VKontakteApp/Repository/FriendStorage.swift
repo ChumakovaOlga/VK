@@ -8,7 +8,7 @@
 import Foundation
 
 class FriendStorage {
-    let friends: [FriendModel]
+    var friends: [FriendModel]
     let allFriends: [FriendModel]
     
     init() {

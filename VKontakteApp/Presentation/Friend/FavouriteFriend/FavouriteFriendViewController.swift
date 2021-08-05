@@ -8,14 +8,19 @@ import UIKit
 
 class FavouriteFriendViewController: UIViewController {
     
+    
+    @IBOutlet var customSearch: UITextField!
+    @IBOutlet var searchBarCancel: UIButton!
     @IBOutlet private var tableView: UITableView!
+    var friendStorage = FriendStorage()
     var friends: [FriendModel] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let storage = FriendStorage()
-        friends = storage.friends
+        customSearch.delegate = self
+       // let storage = FriendStorage()
+        friends = friendStorage.friends
     }
     
     
@@ -50,6 +55,7 @@ class FavouriteFriendViewController: UIViewController {
         
         if !friends.contains(where: {$0.name == friend.name}) {
             friends.append(friend)
+            friendStorage.friends.append(friend)
             tableView.reloadData()
         }
     }
@@ -112,5 +118,25 @@ extension FavouriteFriendViewController: UITableViewDelegate, UITableViewDataSou
             //И удаляем строку из таблицы
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
+    }
+}
+extension FavouriteFriendViewController: UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        friends = getFilteredFriends(friendStorage.friends, searchText: string)
+        tableView.reloadData()
+        return true
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        searchBarCancel.setTitleColor(.orange,for: .normal)
+    }
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        searchBarCancel.setTitleColor(.blue,for: .normal)
+    }
+    
+    private func getFilteredFriends(_ friends: [FriendModel], searchText: String?) -> [FriendModel] {
+        guard let text = searchText, !text.isEmpty else {return friends}
+        
+        return friends.filter{$0.name.lowercased().contains(text.lowercased())}
     }
 }
